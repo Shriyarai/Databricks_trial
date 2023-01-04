@@ -246,13 +246,13 @@ client = MlflowClient()
 
 # COMMAND ----------
 
-# uncomment when running directly through notebook
+# # uncomment when running directly through notebook
 
-user_name = dbutils.notebook.entry_point.getDbutils().notebook().getContext().tags().apply('user')
-experiment_name = "/Repos/{user_name}/Databricks/databricks-notebooks/ManagingModels test".format(user_name=user_name)
+# user_name = dbutils.notebook.entry_point.getDbutils().notebook().getContext().tags().apply('user')
+# experiment_name = "/Repos/{user_name}/Databricks/databricks-notebooks/ManagingModels test".format(user_name=user_name)
 
-experiment = client.get_experiment_by_name(experiment_name)
-print(experiment)
+# experiment = client.get_experiment_by_name(experiment_name)
+# print(experiment)
 
 # COMMAND ----------
 
@@ -267,7 +267,7 @@ print(runs_df)
 run_id = runs_df[0].info.run_uuid
 print(run_id)
 
-model_name = "NYC Taxi Amount API"
+model_name = "NYC Taxi Amount API trial"
 
 artifact_path = "model"
 model_uri = "runs:/{run_id}/{artifact_path}".format(run_id=run_id, artifact_path=artifact_path)
@@ -390,7 +390,7 @@ forecast_nyc_taxi_amount(model_name, model_stage, df)
 from pyspark.ml.regression import LinearRegression
 from pyspark.ml.evaluation import RegressionEvaluator
 
-model_name = "NYC Taxi Amount API"
+model_name = "NYC Taxi Amount API trial"
 elastic_net_param = 0.0
 reg_param = 0.3
 max_iter = 500
