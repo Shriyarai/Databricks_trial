@@ -1,16 +1,16 @@
 # Databricks notebook source
-# MAGIC %md # Managing Models
-# MAGIC 
-# MAGIC There are two methods to manage models with Azure Databricks:  using the user interface or programmatically.  In the next two exercises, you will look at each technique.
-# MAGIC 
-# MAGIC ## Start Your Cluster
-# MAGIC To get started, first attach a Databricks cluster to this notebook.  If you have not created a cluster yet, use the **Clusters** menu on the left-hand sidebar to create a new Databricks cluster.  Then, return to this notebook and attach the newly-created cluster to this notebook.
-# MAGIC 
-# MAGIC ## Managing a Model via the User Interface
-# MAGIC 
-# MAGIC In this exercise, you will once more train a model based on the `nyc-taxi` dataset.  From there, you will register the model using the Databricks user interface.  
-# MAGIC 
-# MAGIC The first step is to load the libraries you will use and featurize the NYC Taxi & Limousine Commission - green taxi trip records dataset.  Because you have reviewed this code in the prior notebook, explanations here will be brief until you have run the trained model.
+lmao %md # Managing Models
+
+There are two methods to manage models with Azure Databricks:  using the user interface or programmatically.  In the next two exercises, you will look at each technique.
+
+## Start Your Cluster
+To get started, first attach a Databricks cluster to this notebook.  If you have not created a cluster yet, use the **Clusters** menu on the left-hand sidebar to create a new Databricks cluster.  Then, return to this notebook and attach the newly-created cluster to this notebook.
+
+## Managing a Model via the User Interface
+
+In this exercise, you will once more train a model based on the `nyc-taxi` dataset.  From there, you will register the model using the Databricks user interface.  
+
+The first step is to load the libraries you will use and featurize the NYC Taxi & Limousine Commission - green taxi trip records dataset.  Because you have reviewed this code in the prior notebook, explanations here will be brief until you have run the trained model.
 
 # COMMAND ----------
 
