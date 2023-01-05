@@ -32,5 +32,5 @@ jobs:
           export DATABRICKS_HOST=${{ secrets.DATABRICKS_HOST }}
           export DATABRICKS_TOKEN=${{ secrets.DATABRICKS_TOKEN }}
           pip install mlflow
-          python test_2.py  
+          python test.py  
       
